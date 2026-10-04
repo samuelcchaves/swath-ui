@@ -1,0 +1,31 @@
+{
+    "name": "samuelcc/swauth-ui",
+    "description": "swauth-ui integrates the swauth authentication module in a ready to use app to start building saas applications",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Samuel",
+            "email": "samuelcchaves2002@icloud.com"
+        }
+    ],
+    "repositories": [
+    {
+        "type": "path",
+        "url": "../swauth",
+        "options": { "symlink": true }
+    }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "slim/slim": "^4.12",
+        "slim/psr7": "^1.6",
+        "php-di/php-di": "^7.0",
+        "vlucas/phpdotenv": "^5.6",
+        "seeware/sw-auth": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
